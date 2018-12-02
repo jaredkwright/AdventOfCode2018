@@ -1,6 +1,6 @@
 from sets import Set
 
-input = open('./input.txt', 'r')
+input = open('../input.txt', 'r')
 data = input.readlines()
 
 frequency = 0
