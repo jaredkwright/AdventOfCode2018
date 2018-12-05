@@ -1,5 +1,5 @@
-input = open('../input.txt', 'r')
-data = input.readlines()
+inputs = open('../input.txt', 'r')
+data = inputs.readlines()
 
 frequency = 0
 for frequency_change in data:

@@ -1,7 +1,7 @@
 from sets import Set
 
-input = open('../input.txt', 'r')
-data = input.readlines()
+inputs = open('../input.txt', 'r')
+data = inputs.readlines()
 
 frequency = 0
 frequencies = Set([])
