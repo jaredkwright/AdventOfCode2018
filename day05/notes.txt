@@ -1,0 +1,10 @@
+Use a doubly-linked list?
+Keep track of head element and current element
+Read and construct one character at a time
+ -> If the next character has a reverse polarity, don't add it AND remove the previous character
+
+Read character - Make node
+Read next char
+  -> Reacts ? previous node is new tail,
+              don't add -- skip to "Read next char"
+            : add -- new node is new tail
