@@ -29,12 +29,11 @@ class List:
         new_node = Node(value)
         if not self.head:
             self.head = new_node
+            self.tail = new_node
         if self.tail:
             old_tail = self.tail
             old_tail.next_node = new_node
             new_node.prev_node = old_tail
-            self.tail = new_node
-        else:
             self.tail = new_node
         self.length += 1
 
@@ -45,9 +44,8 @@ class List:
         if not self.tail:
             return None
         old_tail = self.tail
-        new_tail = old_tail.prev_node if old_tail.prev_node else None
-        old_tail.prev_node = None
-        if new_tail is not None:
+        new_tail = old_tail.prev_node
+        if new_tail:
             new_tail.next_node = None
         self.tail = new_tail
         self.length -= 1
